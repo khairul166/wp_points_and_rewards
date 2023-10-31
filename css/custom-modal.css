@@ -1,0 +1,297 @@
+/* The Modal */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 0px;
+    border: 0px solid #888;
+    width: 30%;
+    text-align: center;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 11px 4px;
+    margin: -11px 4px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-otp-input {
+    padding: 10px;
+    border-top: 1px solid grey;
+}
+
+.modal-otp-input input {
+    width: 100%;
+    max-width: 250px;
+    margin: 5px 0px;
+}
+
+.modal-header-text {
+    font-size: medium;
+    font-weight: 600;
+    padding: 11px 4px;
+}
+
+.send-mail-btn {
+    margin: 10px;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .pts-input {
+        width: 10%;
+        text-align: center;
+    }
+}
+
+
+
+
+/* ================Point setting Switch ===========================*/
+/* Hide the default checkbox */
+.toggle-switch input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the switch container */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Style the switch slider */
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 6px;
+    right: 12px;
+    bottom: 9px;
+    background-color: #9e9e9e;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Style the switch slider when checked */
+.toggle-switch input[type="checkbox"]:checked+.toggle-slider {
+    background-color: #61CE70;
+}
+
+/* Style the switch slider's inner circle */
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: -4px;
+    bottom: -4px;
+    background-color: #e3e3e3;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Move the inner circle when the switch is checked */
+.toggle-switch input[type="checkbox"]:checked+.toggle-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.ptn-wrap {
+    padding: 0px 13px 45px 0px;
+    background-color: white;
+    margin-top: 32px;
+}
+
+.ptn-head {
+    background: #61CE70;
+    padding: 18px 12px;
+    color: white;
+}
+
+.devtext{
+    font-size: 13px;
+}
+.devtext a{
+    text-decoration: none;
+    color: white;
+}
+.ptn-submit{
+    padding: 5px 9px;
+    background: #60ce70;
+    border: none;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.ptn-submit:hover{
+    background-color: #53be63;
+    transition: 0.5s all;
+}
+
+.success-notice{
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin: 5px 15px 2px;
+    padding: 1px 12px;
+    border-left-color: #00a32a;
+}
+
+.ptn-table{
+    border-bottom: 1px solid grey;
+}
+.table-heading{
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tbl-group{
+    background-color: #f9f9f9;
+    min-height: 45px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #bfbfbf;
+}
+
+.full-width-div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #61ce70;
+    color: white;
+}
+
+.left-width-div {
+    width: 30%;
+    min-width: 210px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    line-height: 2.3;
+}
+.right-width-div {
+    width: 70%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    line-height: 2.3;
+}
+.section-head{
+    padding: 10px;
+}
+.wrap{
+    padding: 10px;
+    margin: 0px !important;
+}
+@media screen and (max-width: 768px) {
+.right-width-div input{
+    width: 60px;
+}
+.right-div-ht {
+    width: 20%;
+}
+.left-width-div {
+    width: 50%;
+}
+.nav-tab-wrapper {
+    border-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.ptn-head{
+    text-align: center;
+    font-size: 26px;
+    line-height: 1;
+}
+.ptn-wrap{
+    margin-top: 0px;
+}
+.ptn-head span{
+    display: block;
+}
+}
+
+.custom-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.tooltip-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    line-height: 11px;
+    font-weight: 500;
+}
+
+.custom-tooltip::before {
+    content: attr(aria-label);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
